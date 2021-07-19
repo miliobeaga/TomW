@@ -1,0 +1,16 @@
+@mixin page-header-title {
+  font-family: "Sansita", sans-serif;
+  font-size: 3rem;
+}
+
+@mixin page-header-title-desktop {
+  letter-spacing: 8px;
+  font-family: "Sansita", sans-serif;
+  font-size: 6rem;
+}
+
+
+@mixin plain-anchor {
+  text-decoration: none;
+  color: inherit;
+}
