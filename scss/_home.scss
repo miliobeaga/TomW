@@ -1,14 +1,11 @@
-
-
-.box-galery{
+.box-galery {
   display: flex;
   flex-wrap: wrap;
 }
 
-.main-title{
+.main-title {
   margin-bottom: 20px;
 }
-
 
 /*HOME*/
 .box-img {
@@ -26,14 +23,14 @@
     width: 10%;
     opacity: 0.2;
 
-    &:hover{
+    &:hover {
       opacity: 0.8;
     }
   }
 }
 
 header {
-  &.header-backgroud{
+  &.header-backgroud {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +90,7 @@ header {
   color: #ee6c4d;
   margin: 40px 50px 20px;
   .second {
-  color: #e0fbfc;
+    color: #e0fbfc;
   }
 }
 
@@ -108,10 +105,10 @@ header {
   display: flex;
   flex-direction: column;
   font-family: "Sansita", sans-serif;
-  a{
+  a {
     @include plain-anchor;
     text-align: center;
-    h2{
+    h2 {
       margin-bottom: 20px;
       margin-top: 20px;
       &.disney {
@@ -129,10 +126,10 @@ header {
     }
   }
 
-  .bg-img{
+  .bg-img {
     text-align: center;
     img {
-      max-width: 70%;;
+      max-width: 70%;
     }
   }
 }
@@ -141,16 +138,15 @@ header {
 
 /* DISNEY */
 
-.main-title.disney{
+.main-title.disney {
   color: $color-dos;
-
 }
 
 .bg-disney {
   background: $color-dos;
 }
 
-.frame  {
+.frame {
   text-align: center;
   img {
     max-width: 80%;
@@ -159,15 +155,15 @@ header {
   }
 }
 
-.box-frame{
+.box-frame {
   color: rgba(255, 255, 255, 0);
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 15px;
   text-align: center;
-  width: 50%;
+  width: 100%;
   position: relative;
 
-  h3{
+  h3 {
     color: white;
     font-size: 1rem;
     margin-bottom: 0;
@@ -178,11 +174,11 @@ header {
 /* FIN DISNEY */
 
 /* MARVEL */
-.main-title.marvel{
+.main-title.marvel {
   color: $color-tres;
 }
 
-.bg-marvel{
+.bg-marvel {
   background: $color-tres;
 }
 
@@ -190,11 +186,11 @@ header {
 
 /* STAR WARS */
 
-.main-title.star-wars{
+.main-title.star-wars {
   color: $color-cuatro;
 }
 
-.bg-star-wars{
+.bg-star-wars {
   background: $color-cuatro;
 }
 
@@ -202,63 +198,40 @@ header {
 
 /* RETRO */
 
-.main-title.retro{
+.main-title.retro {
   color: $color-uno;
 }
 
-.bg-retro{
+.bg-retro {
   background: $color-uno;
 }
 
 /* FIN RETRO */
 
 /* BEST SELECTED */
-.conteiner-grid div img {
-  width: 250px;
-  margin: -2px;
-  border: 4px solid rgb(0, 0, 0);
-  transition: all 2s;
-}
 
-.conteiner-grid div img:hover {
-  width: 200%;
-  background-color: rgb(0, 0, 0);
-}
-.conteiner-grid .columna:hover {
-  z-index: 2;
-}
-.columna {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 200px;
-  grid-template-columns: repeat(6, 250px);
+.conteiner-grid {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.conteiner-grid .columna6 {
-  z-index: 1;
-}
-.conteiner-grid .columna5 {
-  position: relative;
-  z-index: 2;
-}
-.conteiner-grid .columna4 {
-  position: relative;
-  z-index: 3;
-}
-.conteiner-grid .columna3 {
-  position: relative;
-  z-index: 4;
-}
-.conteiner-grid .columna2 {
-  position: relative;
-  z-index: 5;
-}
-.conteiner-grid .columna1 {
-  z-index: 6;
+
+  .columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      width: 90%;
+
+      img {
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 /* FIN BEST SELECTED */
-
 
 /* CONTACTO */
 .contact-section {
@@ -286,6 +259,10 @@ header {
 .input-contact {
   display: flex;
   flex-direction: column;
+
+  input {
+    height: 40px;
+  }
 }
 .contact-section img {
   width: 100%;
@@ -296,7 +273,6 @@ header {
 
 .input-contact input.text {
   width: 70;
-  height: 20px;
   transition: all 1s;
 }
 input.text:focus {
@@ -379,7 +355,7 @@ div.dropdown {
     display: block;
   }
   header {
-    &.header-backgroud{
+    &.header-backgroud {
       img {
         display: none;
       }
@@ -395,7 +371,7 @@ div.dropdown {
       }
     }
 
-  .nav-link-home {
+    .nav-link-home {
       margin-top: 150px;
     }
 
@@ -406,13 +382,13 @@ div.dropdown {
 
   .main-title {
     @include page-header-title-desktop;
-    }
+  }
 
-  .subt-page{
+  .subt-page {
     font-size: 2rem;
   }
 
-  .container-tags{
+  .container-tags {
     flex-direction: row;
 
     div {
@@ -423,15 +399,68 @@ div.dropdown {
         font-size: 4.5rem;
         margin-bottom: -12px;
       }
-      .bg-img{
+      .bg-img {
         background: $color-dos;
       }
     }
   }
 
-
-  .box-frame{
+  .box-frame {
     width: 33.33333%;
+  }
+
+  .conteiner-grid {
+    display: block;
+
+    .columna {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 200px;
+      grid-template-columns: repeat(6, 250px);
+      justify-content: center;
+      &:hover {
+        z-index: 2;
+      }
+      div {
+        img {
+          width: 250px;
+          margin: -2px;
+          border: 4px solid rgb(0, 0, 0);
+          transition: all 2s;
+          max-width: initial;
+
+          &:hover {
+            width: 200%;
+            background-color: rgb(0, 0, 0);
+          }
+        }
+      }
+
+      .columna6 {
+        z-index: 1;
+      }
+      .columna5 {
+        position: relative;
+        z-index: 2;
+      }
+
+      .columna4 {
+        position: relative;
+        z-index: 3;
+      }
+      .columna3 {
+        position: relative;
+        z-index: 4;
+      }
+      .columna2 {
+        position: relative;
+        z-index: 5;
+      }
+      .columna1 {
+        position: relative;
+        z-index: 6;
+      }
+    }
   }
 }
 
@@ -466,22 +495,22 @@ div.dropdown {
     z-index: 1;
   }
 
-  .box-frame{
+  .box-frame {
     width: 16.6666666%;
     cursor: pointer;
 
-    img:hover{
+    img:hover {
       background-color: #374358;
       width: 250;
       opacity: 0.2;
       border: 3px solid rgb(0, 0, 0);
     }
-    h3{
+    h3 {
       top: 235px;
-      color: transparent
+      color: transparent;
     }
-    &:hover{
-      h3{
+    &:hover {
+      h3 {
         color: rgb(255, 255, 255);
         font-family: "Alegreya Sans SC", sans-serif;
         font-size: 15px;
@@ -492,22 +521,22 @@ div.dropdown {
     }
   }
 
-  .main-title{
+  .main-title {
     margin-bottom: -20px;
 
-    &.marvel{
+    &.marvel {
       margin-left: 25%;
     }
 
-    &.star-wars{
+    &.star-wars {
       margin-left: 50%;
     }
 
-    &.retro{
+    &.retro {
       margin-left: 75%;
     }
 
-    &.best{
+    &.best {
       margin-bottom: 30px;
       margin-left: 10%;
     }

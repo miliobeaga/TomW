@@ -1,0 +1,44 @@
+@import "mixins";
+
+footer {
+  margin-top: 5%;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  h5 {
+    color: white;
+    border-bottom: 1px solid $color-dos;
+    font-family: $font-principal;
+  }
+  ul {
+    @include reset-list;
+
+    li {
+      color: white;
+      font-family: $font-principal;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    h5 {
+      font-size: 1.2rem;
+    }
+    ul {
+      margin-top: 20px;
+      li {
+        font-size: 1rem;
+      }
+    }
+    .container-about {
+      margin-left: 5%;
+    }
+    .container-contacto {
+      margin-right: 5%;
+    }
+  }
+}

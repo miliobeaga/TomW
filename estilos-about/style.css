@@ -107,7 +107,7 @@ header img {
 /* POSTERS */
 .main-title {
   font-family: "Sansita", sans-serif;
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #ee6c4d;
   margin: 40px 50px 20px; }
   .main-title .second {
@@ -163,7 +163,7 @@ header img {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 15px;
   text-align: center;
-  width: 100%;
+  width: 50%;
   position: relative; }
   .box-frame h3 {
     color: white;
@@ -197,19 +197,47 @@ header img {
 
 /* FIN RETRO */
 /* BEST SELECTED */
-.conteiner-grid {
-  display: flex;
-  flex-direction: column;
+.conteiner-grid div img {
+  width: 250px;
+  margin: -2px;
+  border: 4px solid black;
+  transition: all 2s; }
+
+.conteiner-grid div img:hover {
+  width: 200%;
+  background-color: black; }
+
+.conteiner-grid .columna:hover {
+  z-index: 2; }
+
+.columna {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-columns: repeat(6, 250px);
   justify-content: center; }
-  .conteiner-grid .columna {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .conteiner-grid .columna div {
-      width: 90%; }
-      .conteiner-grid .columna div img {
-        text-align: center;
-        max-width: 100%; }
+
+.conteiner-grid .columna6 {
+  z-index: 1; }
+
+.conteiner-grid .columna5 {
+  position: relative;
+  z-index: 2; }
+
+.conteiner-grid .columna4 {
+  position: relative;
+  z-index: 3; }
+
+.conteiner-grid .columna3 {
+  position: relative;
+  z-index: 4; }
+
+.conteiner-grid .columna2 {
+  position: relative;
+  z-index: 5; }
+
+.conteiner-grid .columna1 {
+  z-index: 6; }
 
 /* FIN BEST SELECTED */
 /* CONTACTO */
@@ -238,8 +266,6 @@ header img {
 .input-contact {
   display: flex;
   flex-direction: column; }
-  .input-contact input {
-    height: 40px; }
 
 .contact-section img {
   width: 100%; }
@@ -249,6 +275,7 @@ header img {
 
 .input-contact input.text {
   width: 70;
+  height: 20px;
   transition: all 1s; }
 
 input.text:focus {
@@ -351,43 +378,7 @@ div.dropdown {
       .container-tags div .bg-img {
         background: #98c1d9; }
   .box-frame {
-    width: 33.33333%; }
-  .conteiner-grid {
-    display: block; }
-    .conteiner-grid .columna {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 200px;
-      grid-template-columns: repeat(6, 250px);
-      justify-content: center; }
-      .conteiner-grid .columna:hover {
-        z-index: 2; }
-      .conteiner-grid .columna div img {
-        width: 250px;
-        margin: -2px;
-        border: 4px solid black;
-        transition: all 2s;
-        max-width: initial; }
-        .conteiner-grid .columna div img:hover {
-          width: 200%;
-          background-color: black; }
-      .conteiner-grid .columna .columna6 {
-        z-index: 1; }
-      .conteiner-grid .columna .columna5 {
-        position: relative;
-        z-index: 2; }
-      .conteiner-grid .columna .columna4 {
-        position: relative;
-        z-index: 3; }
-      .conteiner-grid .columna .columna3 {
-        position: relative;
-        z-index: 4; }
-      .conteiner-grid .columna .columna2 {
-        position: relative;
-        z-index: 5; }
-      .conteiner-grid .columna .columna1 {
-        position: relative;
-        z-index: 6; } }
+    width: 33.33333%; } }
 
 @media only screen and (min-width: 1200px) {
   .header-backgroud h1 {
@@ -444,33 +435,3 @@ div.dropdown {
     margin-top: 5%; }
   .error {
     margin-top: 10%; } }
-
-footer {
-  margin-top: 5%;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px; }
-  footer h5 {
-    color: white;
-    border-bottom: 1px solid #98c1d9;
-    font-family: "Sansita", sans-serif; }
-  footer ul {
-    padding: 0;
-    list-style: none; }
-    footer ul li {
-      color: white;
-      font-family: "Sansita", sans-serif;
-      font-size: 0.8rem; }
-
-@media only screen and (min-width: 768px) {
-  footer h5 {
-    font-size: 1.2rem; }
-  footer ul {
-    margin-top: 20px; }
-    footer ul li {
-      font-size: 1rem; }
-  footer .container-about {
-    margin-left: 5%; }
-  footer .container-contacto {
-    margin-right: 5%; } }

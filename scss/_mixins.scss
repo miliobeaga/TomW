@@ -1,6 +1,6 @@
 @mixin page-header-title {
   font-family: "Sansita", sans-serif;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 @mixin page-header-title-desktop {
@@ -9,8 +9,12 @@
   font-size: 6rem;
 }
 
-
 @mixin plain-anchor {
   text-decoration: none;
   color: inherit;
+}
+
+@mixin reset-list {
+  padding: 0;
+  list-style: none;
 }
